@@ -1,0 +1,100 @@
+html {
+  overflow: hidden;
+  height: auto;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  color: #642AFF;
+}
+
+.rotate {
+  z-index: -1;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: 125%;
+  margin-top: -900px;
+  margin-left: -300px;
+  background: url("img/background1.jpg")
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 200000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 200000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 200000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  
+  animation-name: spin;
+  animation-duration: 200000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(359deg); }
+}
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(359deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(359deg); }
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(359deg);
+  }
+}
+
+.rotate img {
+  border-radius: 50%;
+}
+
+.intro {
+  position: absolute;
+  margin-top: 890px;
+  margin-left: 500px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+  height: 70px;
+  line-height: 30px;
+}
+
+form {
+  text-align: center;
+}
+
+.result {
+  position: absolute;
+  margin-top: 1025px;
+}
+
+img,
+p {
+  text-align: center;
+  display: block;
+}
+
+img {
+  margin: 0 auto;
+}
+
+p {
+  font-size: 30px;
+  color: #000;
+}
+
