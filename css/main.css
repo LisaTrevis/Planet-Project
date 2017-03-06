@@ -83,18 +83,18 @@ form {
   margin-top: 1025px;
 }
 
-img,
-p {
+.result img,
+.result p {
   text-align: center;
   display: block;
 }
 
-img {
+.result img {
   margin: 0 auto;
 }
 
-p {
+.result p {
   font-size: 30px;
   color: #000;
-}
 
+}
