@@ -5,7 +5,7 @@ html {
 
 body {
   font-family: "Press Start 2P", cursive;
-  color: #642AFF;
+  color: #13CCFF;
 }
 
 .rotate {
@@ -96,5 +96,8 @@ form {
 .result p {
   font-size: 30px;
   color: #000;
+}
 
+.description {
+  background:rgba(255,255,255,0.35); 
 }
