@@ -6,6 +6,7 @@ html {
 body {
   font-family: "Press Start 2P", cursive;
   color: #13CCFF;
+  background-color: #111;
 }
 
 .rotate {
@@ -78,6 +79,10 @@ form {
   text-align: center;
 }
 
+#btn {
+  background-color: #000;
+}
+
 .result {
   position: absolute;
   margin-top: 1025px;
@@ -94,10 +99,14 @@ form {
 }
 
 .result p {
-  font-size: 30px;
+  font-size: 25px;
   color: #000;
+  letter-spacing: 1px;
+  word-spacing: 1px;
 }
 
 .description {
-  background:rgba(255,255,255,0.35); 
+  background:rgba(255,255,255,0.40); 
+  margin: 0 auto;
+  width: 80%;
 }
