@@ -1,3 +1,17 @@
+// $("#instruction").typeIt({
+// 	strings: ["ENTER THE NAME", "OF A PLANET"],
+// 	speed: 120,
+// 	loop: true,
+// 	cursor: false
+// });
+
+$( "#input" ).keyup(function(e) {
+  if(e.which === 13) {
+  	$("#btn").click();
+    };
+  }
+});
+
 var planetArray = [
 	{
 	name: "mercury",
