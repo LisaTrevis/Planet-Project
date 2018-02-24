@@ -1,17 +1,3 @@
-// $("#instruction").typeIt({
-// 	strings: ["ENTER THE NAME", "OF A PLANET"],
-// 	speed: 120,
-// 	loop: true,
-// 	cursor: false
-// });
-
-$( "#input" ).keyup(function(e) {
-  if(e.which === 13) {
-  	$("#btn").click();
-    };
-  }
-});
-
 var planetArray = [
 	{
 	name: "mercury",
@@ -64,12 +50,9 @@ function planetFinder() {
 		if(planetName == planetArray[i].name) {
 			document.getElementById("description").textContent = planetArray[i].info
 			document.getElementById("image").src = planetArray[i].img
-			document.getElementById("form").reset();
+			document.getElementById("input").value = '';
 			return
 		}
 	} 	alert("That's not a planet!")
-		document.getElementById("form").reset();
+		document.getElementById("input").value = '';
 };
-
-
-
