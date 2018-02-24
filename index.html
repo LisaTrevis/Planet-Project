@@ -14,12 +14,6 @@
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 
 		<link rel="shortcut icon" href="img/world.png">
@@ -33,10 +27,8 @@
 		<div class="intro">
 			<h1 id="instruction"></h1>
 
-			<form id="form">
-				<input id="input" type="text" onkeyup.enter="planetFinder()">
-				<button id="btn" type="button" onclick="planetFinder()">Submit</button>
-			</form>
+			<input id="input" type="text">
+			<button id="btn" type="button" onclick="planetFinder()">Submit</button>
 		</div>
 
 		<div class="result">
@@ -60,6 +52,14 @@
 	   			loop: true,
 	   			cursor: false
 			});
+		</script>
+
+		<script>
+ 			$('#input').keyup(function(e) {
+   			if(e.keyCode == 13){
+     		planetFinder();
+   			}
+ 			});
 		</script>
 
 		<script src="js/main.js"></script>
