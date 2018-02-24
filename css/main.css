@@ -85,7 +85,7 @@ form {
 
 .result {
   position: absolute;
-  margin-top: 1025px;
+  margin-top: 1050px;
 }
 
 .result img,
@@ -96,17 +96,19 @@ form {
 
 .result img {
   margin: 0 auto;
+  animation: spin 125s linear infinite;
 }
 
 .result p {
-  font-size: 25px;
+  font-size: 20px;
   color: #000;
   letter-spacing: 1px;
   word-spacing: 1px;
+  color: #13CCFF;
 }
 
 .description {
-  background:rgba(255,255,255,0.40); 
+  background:rgba(92,92,92,0.80); 
   margin: 0 auto;
   width: 80%;
 }
